@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.top{
+				margin: 0 auto;
+				width: 800px;
+				height: 100px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				/* padding-top:100px ; */
+			}
+			.top>div{
+				width: 100px;
+				height: 80px;
+				background: violet;
+			}
+			.bottom{
+				width: 800px;
+				height: 300px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.bottom>div{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: none;
+				font-size: 100px;
+				color: lightcoral;
+				line-height: 300px;
+				text-align: center;
+			}
+			.bottom>div:first-child{
+				display: block;
+				background: lavender;
+			}
+			.bottom>div:nth-child(2){
+				background: lavenderblush;
+			}
+			.bottom>div:nth-child(3){
+				background: lightblue;
+			}
+			.bottom>div:nth-child(4){
+				background: lightgoldenrodyellow;
+			}
+			.bottom>div:nth-child(5){
+				background: lightpink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+		</div>
+		<div class="bottom">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+		</div>
+		<div class="hezi">
+			<a href="wufenglunbo.html">next</a>
+		</div>
+	</body>
+	<script src="js/select.js" type="text/javascript" charset="utf-8"></script>
+</html>

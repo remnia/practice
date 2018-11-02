@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>fullpage</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.css"/>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<style type="text/css">
+		.section{
+			text-align: center;
+			font-size: 40px;
+			color: white;
+		}
+		.section:nth-child(1){
+			background-color: lavender
+		}
+		.section:nth-child(2){
+			
+		}
+		.section:nth-child(3){
+			background-color: lawngreen
+		}
+		.section:nth-child(4){
+			background-color: lightcoral
+		}
+		.slide{
+			text-align: center;
+			font-size: 40px;
+			color: white;
+		}
+		.slide:nth-child(1){
+			background-color: violet
+		}
+		.slide:nth-child(2){
+			background-color: crimson
+		}
+		.slide:nth-child(3){
+			background-color: turquoise
+		}
+	</style>
+	<body>
+
+		<div id="fullpage">
+			<div class="section">1</div>
+			<div class="section">
+				<div class="slide">2-1</div>
+				<div class="slide active">2-2</div>
+				<div class="slide">2-3</div>
+			</div>
+			<div class="section">3</div>
+			<div class="section active">4</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					navigation:true
+				});
+			});
+			
+		</script>
+	</body>
